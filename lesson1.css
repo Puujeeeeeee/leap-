@@ -1,0 +1,407 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+}
+header {
+  width: 100vw;
+  height: 7%;
+  background-color: black;
+
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.haha {
+  color: white;
+}
+.container {
+}
+.photos {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 66px;
+}
+
+.tuslah {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.zaag {
+  color: #303030;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.main-head {
+  color: #303030;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.container2 {
+}
+.card {
+}
+.photo-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+}
+@font-face {
+  font-family: myFont;
+  src: url(begok-v15.zip);
+}
+h1 {
+  color: green;
+  font-family: montserrat;
+}
+h4 {
+  color: #303030;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700px;
+  display: flex;
+
+  margin-top: 300px;
+  margin-left: 380px;
+  margin-bottom: -100px;
+}
+.box1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 200px;
+  align-items: flex-start;
+  border: 2px solid black;
+  width: 500px;
+  height: 120px;
+
+  color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px black;
+}
+.box2 {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black;
+
+  width: 500px;
+  height: 120px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px black;
+}
+.box3 {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black;
+  width: 500px;
+  height: 120px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px black;
+}
+.days {
+  color: white;
+  color: #d9d9d9;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 20px;
+}
+.day {
+  color: black;
+
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 20px;
+}
+.sukh {
+  color: white;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 20px;
+}
+.sukhbaatar {
+  color: black;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 20px;
+}
+.box4 {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black;
+  width: 500px;
+  height: 120px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px black;
+}
+.box1:hover {
+  background-color: #303030;
+  color: #d9d9d9;
+  cursor: pointer;
+}
+.box2:hover {
+  background-color: #303030;
+  color: #d9d9d9;
+  cursor: pointer;
+}
+.box3:hover {
+  background-color: #303030;
+  color: #d9d9d9;
+  cursor: pointer;
+}
+.box4:hover {
+  background-color: #303030;
+  color: #d9d9d9;
+  cursor: pointer;
+}
+.box5:hover {
+  background-color: #303030;
+  color: #d9d9d9;
+  cursor: pointer;
+}
+.sukhbaatar:hover {
+  color: white;
+}
+.day:hover {
+  color: white;
+}
+.box5 {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black;
+  width: 500px;
+  height: 120px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px black;
+}
+.tuslah {
+  display: flex;
+  margin-left: 350px;
+}
+.ub {
+  display: flex;
+  box-shadow: 5px 5px 20px black;
+}
+.zaag2 {
+  width: 100vw;
+  height: 100vh;
+}
+.last-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+ul-li {
+  display: flex;
+  width: 308px;
+  min-height: 370px;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 80px;
+}
+.last1 {
+  border: 2px solid green;
+  border-radius: 10px;
+  width: 380px;
+  height: 457px;
+}
+.last2 {
+  border: 2px solid green;
+  border-radius: 10px;
+  width: 380px;
+  height: 457px;
+}
+.start {
+  color: #303030;
+
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 20px;
+}
+
+li {
+  color: #777;
+  font-family: Montserrat;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.head3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.agency {
+  color: #303030;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.pricing {
+}
+.money {
+  color: #303030;
+
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 20px;
+}
+br {
+  color: #777;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 20px;
+}
+.end-container {
+  width: 100vw;
+  height: 50vh;
+  background-color: black;
+}
+.tugsgul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+button {
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-color: green;
+  color: white;
+  font-size: 18px;
+  border: 1px solid black;
+  border-radius: 15px;
+  width: 270px;
+  height: 70px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: antiquewhite;
+}
+
+h2 {
+  color: white;
+  font-size: 50px;
+}
+.pinecone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1200px;
+  margin-top: 80px;
+}
+.pine {
+  color: white;
+}
+.button1 {
+  background-color: #303030;
+  color: white;
+  font-size: 25px;
+  gap: 20px;
+  animation: button1 1s;
+}
+.button1:hover {
+  background-color: #777;
+}
+.last2:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.last1:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+button:hover {
+  background-color: #777;
+  border-radius: 20px;
+  cursor: pointer;
+}
+@keyframes button1 {
+  0% {
+    transform: rotate(20deg);
+  }
+}
+@media screen and (max-width: 992px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+  .ub {
+    display: none;
+  }
+  .last-button {
+    display: none;
+  }
+  .card {
+    display: flex;
+    align-items: center;
+    margin-left: 220px;
+  }
+  .h4 {
+    display: none;
+  }
+  .tuslah {
+    display: none;
+  }
+}
+@media screen and (min-width: 390px) {
+  .tugsgul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .h4 {
+    display: none;
+  }
+}
