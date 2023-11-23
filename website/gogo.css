@@ -8,6 +8,7 @@ header {
 
   display: flex;
 }
+
 .main-header {
   display: flex;
   justify-content: center;
@@ -120,8 +121,6 @@ header {
 .card {
   width: 22%;
   height: 300px;
-
-  border: 2px solid green;
   background-image: url(usa.jpeg);
   background-size: 160%;
   background-position: center;
@@ -147,6 +146,104 @@ header {
   font-size: 20px;
 }
 .card h1:hover {
+  opacity: 1;
+  transition: all opacity 0.3s ease-in-out;
+}
+
+.card1 {
+  width: 22%;
+  height: 300px;
+
+  background-image: url(miss.jpeg);
+  background-size: 160%;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+.card1:hover {
+  background-size: 170%;
+  transition: background-size 0.3s ease-in-out;
+}
+.card1 h1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.383);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+.card1 h1:hover {
+  opacity: 1;
+  transition: all opacity 0.3s ease-in-out;
+}
+
+.card5 {
+  width: 22%;
+  height: 300px;
+
+  background-image: url(mobicom.jpeg);
+  background-size: 160%;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+.card5:hover {
+  background-size: 170%;
+  transition: background-size 0.3s ease-in-out;
+}
+.card5 h1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.383);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+.card5 h1:hover {
+  opacity: 1;
+  transition: all opacity 0.3s ease-in-out;
+}
+
+.card3 {
+  width: 22%;
+  height: 300px;
+
+  background-size: 160%;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+.card5:hover {
+  background-size: 170%;
+  transition: background-size 0.3s ease-in-out;
+}
+.card5 h1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.383);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+.card5 h1:hover {
   opacity: 1;
   transition: all opacity 0.3s ease-in-out;
 }
@@ -241,12 +338,12 @@ header {
 }
 button {
   width: 40vw;
-  height: 90px;
+  height: 80px;
   font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid white;
+  border: 1px solid grey;
   border-radius: 10px;
 }
 .button:hover {
@@ -257,11 +354,16 @@ button {
   width: 30px;
 }
 .card3 {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+
   width: 850px;
   height: 200px;
 
   background-color: white;
-  display: flex;
 }
 .main3-head {
   width: 42vw;
@@ -295,29 +397,564 @@ button {
   display: flex;
 }
 .card3-photo {
-  width: 300px;
+  background-image: url(elchin.jpeg);
+  width: 600px;
   height: 200px;
+  background-color: black;
+  border-radius: 10px;
+  background-size: 160%;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+  background-repeat: no-repeat;
   border-radius: 10px;
 }
-.card3-photo-amar {
+.main-card3-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card3-photo:hover {
+  background-size: 170%;
+  transition: background-size 0.3s ease-in-out;
+}
+.card3-photo h2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.383);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+.card3-photo h2:hover {
+  opacity: 1;
+  transition: all opacity 0.3s ease-in-out;
+}
+
+/* 4 */
+.card4-photo {
+  background-image: url(lam.jpeg);
+  width: 600px;
+  height: 200px;
+  background-color: black;
+  border-radius: 10px;
+  background-size: 160%;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.card4-photo:hover {
+  background-size: 170%;
+  transition: background-size 0.3s ease-in-out;
+}
+.card4-photo h2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.383);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+.card4-photo h2:hover {
+  opacity: 1;
+  transition: all opacity 0.3s ease-in-out;
+}
+/* 5 */
+.card5-photo {
+  background-image: url(utaa.jpeg);
+  width: 600px;
+  height: 200px;
+  background-color: black;
+  border-radius: 10px;
+  background-size: 160%;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.card5-photo:hover {
+  background-size: 170%;
+  transition: background-size 0.3s ease-in-out;
+}
+.card5-photo h2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.383);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+.card5-photo h2:hover {
+  opacity: 1;
+  transition: all opacity 0.3s ease-in-out;
+}
+/* 6 */
+.card6-photo {
+  background-image: url(mashin.jpeg);
+  width: 600px;
+  height: 200px;
+  background-color: black;
+  border-radius: 10px;
+  background-size: 160%;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.card6-photo:hover {
+  background-size: 170%;
+  transition: background-size 0.3s ease-in-out;
+}
+.card6-photo h2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.383);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+.card6-photo h2:hover {
+  opacity: 1;
+  transition: all opacity 0.3s ease-in-out;
+}
+/* 7 */
+.card7-photo {
+  background-image: url(stogt.jpeg);
+  width: 600px;
+  height: 200px;
+  background-color: black;
+  border-radius: 10px;
+  background-size: 160%;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.card7-photo:hover {
+  background-size: 170%;
+  transition: background-size 0.3s ease-in-out;
+}
+.card7-photo h2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.383);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+.card7-photo h2:hover {
+  opacity: 1;
+  transition: all opacity 0.3s ease-in-out;
+}
+/* 8 */
+.card8-photo {
+  background-image: url(teever.jpeg);
+  width: 600px;
+  height: 200px;
+  background-color: black;
+  border-radius: 10px;
+  background-size: 160%;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.card8-photo:hover {
+  background-size: 170%;
+  transition: background-size 0.3s ease-in-out;
+}
+.card8-photo h2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.383);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+.card8-photo h2:hover {
+  opacity: 1;
+  transition: all opacity 0.3s ease-in-out;
+}
+/* 9 */
+.card9-photo {
+  background-image: url(taka.jpeg);
+  width: 600px;
+  height: 200px;
+  background-color: black;
+  border-radius: 10px;
+  background-size: 160%;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.card9-photo:hover {
+  background-size: 170%;
+  transition: background-size 0.3s ease-in-out;
+}
+.card9-photo h2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.383);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+.card9-photo h2:hover {
+  opacity: 1;
+  transition: all opacity 0.3s ease-in-out;
+}
+/* 10 */
+.card10-photo {
+  background-image: url(rh.jpeg);
+  width: 600px;
+  height: 200px;
+  background-color: black;
+  border-radius: 10px;
+  background-size: 160%;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.card10-photo:hover {
+  background-size: 170%;
+  transition: background-size 0.3s ease-in-out;
+}
+.card10-photo h2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.383);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+.card10-photo h2:hover {
+  opacity: 1;
+  transition: all opacity 0.3s ease-in-out;
+}
+/* 11 */
+.card11-photo {
+  background-image: url(utasgui.jpeg);
+  width: 600px;
+  height: 200px;
+  background-color: black;
+  border-radius: 10px;
+  background-size: 160%;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.card11-photo:hover {
+  background-size: 170%;
+  transition: background-size 0.3s ease-in-out;
+}
+.card11-photo h2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.383);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+.card11-photo h2:hover {
+  opacity: 1;
+  transition: all opacity 0.3s ease-in-out;
+}
+/* 12 */
+.card12-photo {
+  background-image: url(yria.png);
+  width: 600px;
+  height: 200px;
+  background-color: black;
+  border-radius: 10px;
+  background-size: 160%;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.card12-photo:hover {
+  background-size: 170%;
+  transition: background-size 0.3s ease-in-out;
+}
+.card12-photo h2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.383);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+.card12-photo h2:hover {
+  opacity: 1;
+  transition: all opacity 0.3s ease-in-out;
+}
+/* 13 */
+.card13-photo {
+  background-image: url(iran.jpeg);
+  width: 600px;
+  height: 200px;
+  background-color: black;
+  border-radius: 10px;
+  background-size: 160%;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.card13-photo:hover {
+  background-size: 170%;
+  transition: background-size 0.3s ease-in-out;
+}
+.card13-photo h2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.383);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+.card13-photo h2:hover {
+  opacity: 1;
+  transition: all opacity 0.3s ease-in-out;
+}
+/* 14 */
+.card14-photo {
+  background-image: url(gar.jpeg);
+  width: 600px;
+  height: 200px;
+  background-color: black;
+  border-radius: 10px;
+  background-size: 160%;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.card14-photo:hover {
+  background-size: 170%;
+  transition: background-size 0.3s ease-in-out;
+}
+.card14-photo h2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.383);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+.card14-photo h2:hover {
+  opacity: 1;
+  transition: all opacity 0.3s ease-in-out;
+}
+/* 15 */
+.card15-photo {
+  background-image: url(mo.jpeg);
+  width: 600px;
+  height: 200px;
+  background-color: black;
+  border-radius: 10px;
+  background-size: 160%;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.card15-photo:hover {
+  background-size: 170%;
+  transition: background-size 0.3s ease-in-out;
+}
+.card15-photo h2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.383);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+.card15-photo h2:hover {
+  opacity: 1;
+  transition: all opacity 0.3s ease-in-out;
+}
+.card15-photo-amar {
   width: 100%;
   height: 250px;
 }
-.card3-h1-p {
+.card15-h1-p {
   padding: 20px;
 }
 p {
   margin-top: 10px;
 }
-.card4 h1 {
+.card15 h1 {
   font-size: 20px;
+}
+.card15-h1-p h1 {
+  font-size: 25px;
+}
+.card3-h1-p {
+  padding: 30px;
 }
 .card3-h1-p h1 {
   font-size: 25px;
 }
+.main-card-photo h1 {
+  font-size: 15px;
+}
+/* 16 */
+.card16-photo {
+  background-image: url(tselmeg.jpeg);
+  width: 600px;
+  height: 200px;
+  background-color: black;
+  border-radius: 10px;
+  background-size: 160%;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
 
+.card16-photo:hover {
+  background-size: 170%;
+  transition: background-size 0.3s ease-in-out;
+}
+.card16-photo h2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.383);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+.card16-photo h2:hover {
+  opacity: 1;
+  transition: all opacity 0.3s ease-in-out;
+}
+/* 17 */
+.card17-photo {
+  background-image: url(temuuulen.jpeg);
+  width: 600px;
+  height: 200px;
+  background-color: black;
+  border-radius: 10px;
+  background-size: 160%;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.card17-photo:hover {
+  background-size: 170%;
+  transition: background-size 0.3s ease-in-out;
+}
+.card17-photo h2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.383);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+.card17-photo h2:hover {
+  opacity: 1;
+  transition: all opacity 0.3s ease-in-out;
+}
 .main-card-photo {
   border-radius: 10px;
+}
+.main-card-photo h1 {
+  font-size: 25px;
 }
 .trend {
   width: 330px;
@@ -352,6 +989,10 @@ p {
   border-right-color: #f6ebde;
   margin-top: 30px;
 }
+.card3-photo-amar {
+  width: 800px;
+  height: 250px;
+}
 .trend-list1 h1 {
   color: red;
   font-size: 60px;
@@ -372,6 +1013,7 @@ p {
   flex-direction: column;
   margin-top: 10px;
 }
+
 .yriltslaga header {
   width: 70vw;
   display: flex;
@@ -400,6 +1042,9 @@ p {
   grid-row-start: 1;
   grid-row-end: 4;
   background-color: red;
+}
+.main4-container {
+  margin-top: 300px;
 }
 .box2 {
   background-color: green;
@@ -440,26 +1085,32 @@ p {
 .hev {
   width: 70vw;
   height: 10vh;
-
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
 }
 
-.haan {
-  width: 100%;
-  height: 300px;
-  border-radius: 10px;
-}
-.haans {
-  width: 100%;
-  height: 250px;
-  border-radius: 10px;
-}
-.card {
+.cards {
   width: 22%;
   height: 200px;
   margin-top: 10px;
 }
+.cards {
+  margin-top: 100px;
+}
+
+.card1 {
+  width: 22%;
+  height: 200px;
+  margin-top: 10px;
+}
+
+.card5 {
+  width: 22%;
+  height: 200px;
+  margin-top: 10px;
+}
+
 .main-cards {
   display: flex;
   justify-content: space-between;
@@ -505,7 +1156,7 @@ p {
   width: 295px;
   height: 150px;
   border: 1px solid grey;
-  margin-top: -10px;
+  margin-top: 0.5px;
   padding: 10px;
 }
 .haanuud {
@@ -540,7 +1191,7 @@ p {
   width: 34.5vw;
   height: 160px;
   border: 1px solid grey;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .igor {
   padding: 20px;
@@ -552,9 +1203,690 @@ p {
   background-color: black;
 }
 .hevuu {
-  width: 110vw;
-  height: 700px;
+  width: 100vw;
+  height: 800px;
   background-color: black;
-  margin-top: 200px;
-  margin-left: -315px;
+  margin-top: 150px;
+  margin-left: -300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.m6-container {
+  width: 70vw;
+  height: 750px;
+}
+.head-boxuud {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.head-boxuud h1 {
+  color: white;
+}
+
+.boxuud1 {
+  width: 300px;
+  height: 200px;
+
+  background-image: url(chuulgan\ baterdene-104606-21322888981.jpeg);
+  border-radius: 10px;
+  background-size: 160%;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+
+.boxuud1:hover {
+  background-size: 170%;
+  transition: background-size 0.3s ease-in-out;
+}
+.play-uzeh {
+  width: 62vw;
+  height: 40px;
+  display: flex;
+  margin-bottom: -60px;
+}
+.boxuud1 h2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.383);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+.boxuud1 h2:hover {
+  opacity: 1;
+  transition: all opacity 0.3s ease-in-out;
+}
+.boxuud2 {
+  width: 300px;
+  height: 200px;
+
+  background-image: url(uih.jpeg);
+}
+.uzeh {
+  color: white;
+}
+.boxuud3 {
+  width: 300px;
+  height: 200px;
+
+  background-image: url(lion.jpeg);
+  border-radius: 10px;
+  background-size: 160%;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+
+.boxuud3:hover {
+  background-size: 170%;
+  transition: background-size 0.3s ease-in-out;
+}
+.boxuud3 h2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.383);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+.boxuud3 h2:hover {
+  opacity: 1;
+  transition: all opacity 0.3s ease-in-out;
+}
+.boxuud2 {
+  width: 300px;
+  height: 200px;
+
+  background-image: url(uih.jpeg);
+  border-radius: 10px;
+  background-size: 160%;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+
+.boxuud2:hover {
+  background-size: 170%;
+  transition: background-size 0.3s ease-in-out;
+}
+.boxuud2 h2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.383);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+.boxuud2 h2:hover {
+  opacity: 1;
+  transition: all opacity 0.3s ease-in-out;
+}
+.boxuud2 {
+  width: 300px;
+  height: 200px;
+
+  background-image: url(uih.jpeg);
+}
+.boxuud4 {
+  width: 300px;
+  height: 200px;
+
+  background-image: url(shatar.jpeg);
+  border-radius: 10px;
+  background-size: 160%;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+
+.boxuud4:hover {
+  background-size: 170%;
+  transition: background-size 0.3s ease-in-out;
+}
+.boxuud4 h2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.383);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+.boxuud4 h2:hover {
+  opacity: 1;
+  transition: all opacity 0.3s ease-in-out;
+}
+.boxuud4 {
+  width: 300px;
+  height: 200px;
+
+  background-image: url(uih.jpeg);
+}
+.boxuud1 {
+  width: 300px;
+  height: 200px;
+
+  background-image: url(chuulgan\ baterdene-104606-21322888981.jpeg);
+  border-radius: 10px;
+  background-size: 160%;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+
+.boxuud5:hover {
+  background-size: 170%;
+  transition: background-size 0.3s ease-in-out;
+}
+.boxuud5 h2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.383);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+.boxuud5 h2:hover {
+  opacity: 1;
+  transition: all opacity 0.3s ease-in-out;
+}
+.boxuud5 {
+  width: 300px;
+  height: 200px;
+
+  background-image: url(energy.jpeg);
+  border-radius: 10px;
+  background-size: 160%;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+
+.boxuud6 {
+  width: 300px;
+  height: 200px;
+
+  background-image: url(pap.jpeg);
+  border-radius: 10px;
+  background-size: 160%;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+
+.boxuud6:hover {
+  background-size: 170%;
+  transition: background-size 0.3s ease-in-out;
+}
+.boxuud6 h2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.383);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+.boxuud6 h2:hover {
+  opacity: 1;
+  transition: all opacity 0.3s ease-in-out;
+}
+.boxuud7 {
+  width: 300px;
+  height: 200px;
+
+  background-image: url(suseg.jpeg);
+  border-radius: 10px;
+  background-size: 160%;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+
+.boxuud7:hover {
+  background-size: 170%;
+  transition: background-size 0.3s ease-in-out;
+}
+.boxuud7 h2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.383);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+.boxuud7 h2:hover {
+  opacity: 1;
+  transition: all opacity 0.3s ease-in-out;
+}
+.boxuud8 {
+  width: 300px;
+  height: 200px;
+
+  background-image: url(suseg.jpeg);
+}
+.boxuud8 {
+  width: 300px;
+  height: 200px;
+
+  background-image: url(hicheel.jpeg);
+  border-radius: 10px;
+  background-size: 160%;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+
+.boxuud8:hover {
+  background-size: 170%;
+  transition: background-size 0.3s ease-in-out;
+}
+.boxuud8 h2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.383);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+.boxuud8 h2:hover {
+  opacity: 1;
+  transition: all opacity 0.3s ease-in-out;
+}
+.boxuud4 {
+  width: 300px;
+  height: 200px;
+
+  background-image: url(uih.jpeg);
+}
+
+.boxd {
+  display: flex;
+  gap: 20px;
+  margin-top: 100px;
+}
+
+.trend-list1:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
+  color: rgb(187, 185, 185);
+}
+button:hover {
+  background-color: white;
+  transition: 0.4s;
+}
+
+.card-photo11 {
+  background-image: url(gobi.jpeg);
+  width: 315px;
+  height: 200px;
+  background-color: black;
+  border-radius: 10px;
+  background-size: 160%;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.card-photo11:hover {
+  background-size: 170%;
+  transition: background-size 0.3s ease-in-out;
+}
+.card-photo11 h3 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.383);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+.card-photo11 h3:hover {
+  opacity: 1;
+  transition: all opacity 0.3s ease-in-out;
+}
+.main-card4-photo {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+}
+.main-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.card-photo12 {
+  background-image: url(ett.jpeg);
+  width: 315px;
+  height: 200px;
+  background-color: black;
+  border-radius: 10px;
+  background-size: 160%;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.card-photo12:hover {
+  background-size: 170%;
+  transition: background-size 0.3s ease-in-out;
+}
+.card-photo12 h3 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.383);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+.card-photo12 h3:hover {
+  opacity: 1;
+  transition: all opacity 0.3s ease-in-out;
+}
+.card-photo13 {
+  background-image: url(nuur.jpeg);
+  width: 315px;
+  height: 200px;
+  background-color: black;
+  border-radius: 10px;
+  background-size: 160%;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.card-photo13:hover {
+  background-size: 170%;
+  transition: background-size 0.3s ease-in-out;
+}
+.card-photo13 h3 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.383);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+.card-photo13 h3:hover {
+  opacity: 1;
+  transition: all opacity 0.3s ease-in-out;
+}
+.card-photo14 {
+  background-image: url(aavto.jpeg);
+  width: 315px;
+  height: 200px;
+  background-color: black;
+  border-radius: 10px;
+  background-size: 160%;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.card-photo14:hover {
+  background-size: 170%;
+  transition: background-size 0.3s ease-in-out;
+}
+.card-photo14 h3 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.383);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+.card-photo14 h3:hover {
+  opacity: 1;
+  transition: all opacity 0.3s ease-in-out;
+}
+.card-photo15 {
+  background-image: url(hyundai.jpeg);
+  width: 315px;
+  height: 200px;
+  background-color: black;
+  border-radius: 10px;
+  background-size: 160%;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.card-photo15:hover {
+  background-size: 170%;
+  transition: background-size 0.3s ease-in-out;
+}
+.card-photo15 h3 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.383);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+.card-photo15 h3:hover {
+  opacity: 1;
+  transition: all opacity 0.3s ease-in-out;
+}
+.card-photo16 {
+  background-image: url(iran.jpeg);
+  width: 315px;
+  height: 200px;
+  background-color: black;
+  border-radius: 10px;
+  background-size: 160%;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.card-photo16:hover {
+  background-size: 170%;
+  transition: background-size 0.3s ease-in-out;
+}
+.card-photo16 h3 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.383);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+.card-photo16 h3:hover {
+  opacity: 1;
+  transition: all opacity 0.3s ease-in-out;
+}
+.card-photo17 {
+  background-image: url(darhan.jpeg);
+  width: 315px;
+  height: 200px;
+  background-color: black;
+  border-radius: 10px;
+  background-size: 160%;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.card-photo17:hover {
+  background-size: 170%;
+  transition: background-size 0.3s ease-in-out;
+}
+.card-photo17 h3 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.383);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+.card-photo17 h3:hover {
+  opacity: 1;
+  transition: all opacity 0.3s ease-in-out;
+}
+.card-photo18 {
+  background-image: url(chat.jpeg`);
+  width: 315px;
+  height: 200px;
+  background-color: black;
+  border-radius: 10px;
+  background-size: 160%;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.card-photo18:hover {
+  background-size: 170%;
+  transition: background-size 0.3s ease-in-out;
+}
+.card-photo18 h3 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.383);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+.card-photo18 h3:hover {
+  opacity: 1;
+  transition: all opacity 0.3s ease-in-out;
+}
+.chuulga {
+  color: white;
+}
+footer {
+  width: 70vw;
+  height: 300px;
+}
+.last-dance {
+  display: flex;
+  width: 70vw;
+  height: 200px;
+  border: 2px solid rgb(203, 198, 198);
+  border-top-color: white;
+  border-right-color: white;
+  border-left-color: white;
+  justify-content: space-evenly;
+  gap: 160px;
+}
+.last-dance ul {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.last-dance ul p {
+  cursor: pointer;
+}
+.last-dance ul p:hover {
+  color: #00b0f4;
+  transition: 0.5s;
+}
+.gogo-logo {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gogo-logo-last {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
