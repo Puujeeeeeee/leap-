@@ -89,21 +89,21 @@
 // console.log(`${number}-ын ${i - 1} зэрэг нь 1000-аас их байна: ${x}`);
 
 // ugugdsun too hurtlh toonii tegsh toonii niilber🤑
-const number = parseInt(prompt("Enter a number:"));
+// const number = window.prompt("Enter a number:");
 
-if (isNaN(number) || number === 0) {
-  window.alert("buruu utga bna.");
-} else {
-  let sum = 0;
+// if (isNaN(number)) {
+//   window.alert("buruu utga bna.");
+// } else {
+//   let result = 0;
 
-  for (let i = 1; i < number; i++) {
-    if (i % 2 === 0) {
-      sum += i;
-    }
-  }
+//   for (let i = 1; i < number; i++) {
+//     if (i % 2 === 0) {
+//       result += i;
+//     }
+//   }
 
-  console.log(`${number} is: ${sum}`);
-}
+//   console.log(`${number} is: ${result}`);
+// }
 // ugudsun too hurtleh nuh toonii niilber😊
 // const number = parseInt(prompt("Enter a number:"));
 
@@ -117,3 +117,12 @@ if (isNaN(number) || number === 0) {
 //   }
 //   console.log(`${number} is: ${sum}`);
 // }
+// /pyramid🫶🏿
+let rows = parseInt(prompt("Enter a number:"));
+if (!isNaN(rows) && rows > 0) {
+  for (let i = 1; i <= rows; i++) {
+    console.log("*".repeat(i));
+  }
+} else {
+  alert("buruu utga.");
+}
