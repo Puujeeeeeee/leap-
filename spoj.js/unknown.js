@@ -118,11 +118,35 @@
 //   console.log(`${number} is: ${sum}`);
 // }
 // /pyramid🫶🏿
-let rows = parseInt(prompt("Enter a number:"));
-if (!isNaN(rows) && rows > 0) {
-  for (let i = 1; i <= rows; i++) {
-    console.log("*".repeat(i));
-  }
-} else {
-  alert("buruu utga.");
+// let rows = parseInt(prompt("Enter a number:"));
+// if (!isNaN(rows) && rows > 0) {
+//   for (let i = 1; i <= rows; i++) {
+//     console.log("*".repeat(i));
+//   }
+// } else {
+//   alert("buruu utga.");
+// }
+const number = parseInt(prompt("Enter a number:"));
+
+if (isNaN(number)) {
+  window.alert("buruu utga.");
 }
+
+function chessBoard() {
+  let board = "";
+
+  for (let i = 0; i < number; i++) {
+    for (let j = 0; j < number; j++) {
+      if ((j + i) % 2 === 0) {
+        board += "_";
+      } else {
+        board += "#";
+      }
+    }
+    board += "\n";
+  }
+
+  console.log(board);
+}
+
+chessBoard();
