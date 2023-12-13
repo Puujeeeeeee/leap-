@@ -15,4 +15,11 @@
   </body>
 </html>
 <!--  -->
-split-tuhain
+split-tuhainlet number = parseInt(prompt("Enter a number:")); const arr = [1, 2,
+3, 4]; let str = ""; let sum = 0; for (let i = 0; i < arr.length; i++) { sum +=
+arr[i]; str += arr[i]; if (i < arr.length - 1) { str += ", "; } } str += ", " +
+number; sum += number; console.log(`${str} = ${sum}`); [2, 7] const arr = [2, 3,
+5, 10, 7]; const target = 9; let resultPair = null; for (let i = 0; i <
+arr.length; i++) { for (let j = i + 1; j < arr.length; j++) { if (arr[i] +
+arr[j] === target) { resultPair = [arr[i], arr[j]]; break; // If you only want
+to find one pair, you can break here } } } console.log(resultPair);
