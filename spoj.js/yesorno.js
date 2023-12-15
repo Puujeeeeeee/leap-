@@ -329,16 +329,103 @@
 
 // lastNumber(arr);
 // console.log(`Sum of array elements excluding the last one: ${sum}`);
-const arr = [2, 3, 5, 10, 7];
-const target = 9;
+// const arr = [2, 3, 5, 10, 7];
+// const target = 9;
+// let sum = 0;
+
+// for (let i = 0; i < arr.length; i++) {
+//   for (let j = i + 1; j < arr.length; j++) {
+//     if (arr[i] + arr[j] === target) {
+//       sum = [arr[i], arr[j]];
+//     }
+//   }
+// }
+
+// console.log(sum);
+// const numbersObject = { a: 5, b: 10, c: 3 };
+
+// function calculateSum(obj) {
+//   // Get the values of the object using Object.values() and then use reduce to calculate the sum
+//   const sum = Object.values(obj).reduce(
+//     (acc, currentValue) => acc + currentValue,
+//     0
+//   );
+//   return sum;
+// }
+
+// // Call the function with the given object
+// const result = calculateSum(numbersObject);
+
+// Display the result
+// console.log(result); // Output: 18
+// const stringObject = { name: "john", age: 25, city: "example" };
+
+// function capitalizeFirstLetter(obj) {
+//   const result = {};
+
+//   for (const key in obj) {
+//     if (obj.hasOwnProperty(key)) {
+//       // Capitalize the first letter of each property value
+//       result[key] = obj[key][0].toUpperCase() + obj[key].slice(1);
+//     }
+//   }
+
+//   return result;
+// }
+
+// // Call the function with the given object
+// const capitalizedObject = capitalizeFirstLetter(stringObject);
+
+// // Display the result
+// console.log(capitalizedObject);
+// // Output: { name: 'John', age: 25, city: 'Example' }
+// // Example Object (Values ashiglahgui)
+// const numbersObject = { a: 3, b: 10, c: 3 };
+// function calculateSum(obj) {
+//   let sum = 0;
+
+//   for (let key in obj) {
+//     if (obj.hasOwnProperty(key)) {
+//       sum += obj[key];
+//     }
+//   }
+
+//   return sum;
+// }
+
+// const result = calculateSum(numbersObject);
+
+// console.log(result);
+// Example Object
+// const stringObject = {
+//   name: "john",
+//   age: 25,
+//   city: "example",
+// };
+// function capitalizeFirstLetter(obj) {
+//   const newObj = {};
+
+//   for (let key in obj) {
+//     if (obj.hasOwnProperty(key)) {
+//       const value = obj[key];
+
+//       if (typeof value === "string" || value instanceof String) {
+//         newObj[key] = value.charAt(0).toUpperCase() + value.slice(1);
+//       } else {
+//         newObj[key] = value;
+//       }
+//     }
+//   }
+
+//   return newObj;
+// }
+// const capitalizedObject = capitalizeFirstLetter(stringObject);
+// console.log(capitalizedObject);
+
+const numbersObject = { a: 4, b: 2, c: 5 };
+const keys = object.keys(numbersObject);
 let sum = 0;
-
-for (let i = 0; i < arr.length; i++) {
-  for (let j = i + 1; j < arr.length; j++) {
-    if (arr[i] + arr[j] === target) {
-      sum = [arr[i], arr[j]];
-    }
-  }
+for (i = 0; i < keys.length; i++) {
+  sum += numbersObject[keys[i]];
 }
-
 console.log(sum);
