@@ -396,7 +396,7 @@
 // const result = calculateSum(numbersObject);
 
 // console.log(result);
-// Example Object
+
 // const stringObject = {
 //   name: "john",
 //   age: 25,
@@ -422,10 +422,70 @@
 // const capitalizedObject = capitalizeFirstLetter(stringObject);
 // console.log(capitalizedObject);
 
-const numbersObject = { a: 4, b: 2, c: 5 };
-const keys = object.keys(numbersObject);
-let sum = 0;
-for (i = 0; i < keys.length; i++) {
-  sum += numbersObject[keys[i]];
-}
-console.log(sum);
+// const numbersObject = { a: 4, b: 2, c: 5 };
+// const keys = object.keys(numbersObject);
+// let sum = 0;
+// for (i = 0; i < keys.length; i++) {
+//   sum += numbersObject[keys[i]];
+// }
+// console.log(sum);
+
+// let product = {
+//   name: "headphones",
+//   price: 80,
+//   discount: 0,
+// };
+
+// function priceDiscount() {
+//   if (product.price > 100) {
+//     product.discount = (product.price / 100) * 10;
+//     product.price = product.price - product.discount;
+//   } else {
+//     product.discount = (product.price / 100) * 7;
+//     product.price = product.price - product.discount;
+//   }
+// }
+
+// priceDiscount();
+// console.log(product);
+
+// let product = {
+//   names: "phone",
+//   price: 100,
+//   discount: 0,
+// };
+// if (product.price > 100) {
+//   discount = (product.price / 100) * 10;
+//   product.price = product.price - discount;
+// } else {
+//   discount = (product.price / 100) * 7;
+//   product.price = product.price - discount;
+// }
+// console.log(product.names);
+// console.log(product.price);
+
+// const n = parseInt(prompt("Enter a number:"));
+
+// if (!isNaN(n) && n < 10) {
+//   for (let i = 1; i <= n; i++) {
+//     let line = "";
+//     for (let j = n; j > 0; j--) {
+//       line += j + " ";
+//     }
+//     console.log(line);
+//     console.log("");
+//   }
+// } else {
+//   console.log("Invalid input");
+// }
+// const elements = document.querySelector("pipi");
+// console.log(elements);
+
+// const elements = (document.querySelector("#demo").innerHTML = "<p>poine</p>");
+
+// const elements = document.createAttribute("demo");
+// h1.innerText = "my h1";
+// document.getElementsByTagName("demo")[0].appendChild(h1);
+
+const p = document.getElementById(div);
+document.getElementsByTagName("div")[0].replaceChild(new comtent());
