@@ -1,0 +1,20 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: antiquewhite;
+}
+.box {
+  width: 15vw;
+  height: 10vh;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+}
+.main-box {
+}
