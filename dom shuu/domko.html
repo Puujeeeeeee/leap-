@@ -3,18 +3,201 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./domko.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="to-do.css" />
+    <style></style>
+    <title>To-Do List</title>
   </head>
   <body>
-    <div class="main-box">
-      <div class="box">
-        <p>Ta uhaantai yu?</p>
-        <button>YES</button>
-        <button>NO</button>
+    <div class="main-container">
+      <div class="container">
+        <div class="boards" id="boards">
+          <!-- Board 1: To Do -->
+          <div
+            draggable="true"
+            class="board"
+            id="card1
+          "
+            ondragover="allowDrop(event)"
+          >
+            <div class="board-head">
+              <h1>To Do</h1>
+              <div class="zero">0</div>
+            </div>
+            <div
+              class="on-drop"
+              ondragover="allowDrop(event)"
+              ondrop="drop(event)"
+            ></div>
+
+            <div
+              ondragstart="drag(event)"
+              class="cards"
+              draggable="true"
+              id="board1"
+            >
+              <div class="circle">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div class="details">
+                <h4>Todo</h4>
+                <p>This is a todo card</p>
+                <div class="priority">High</div>
+              </div>
+              <div class="main-circle">
+                <div class="circle">
+                  <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="circle">
+                  <i class="fa-solid fa-pen"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="solid">
+                <div class="add-card">
+                  <p class="add-card" onclick="show()" id="add-todo-button">
+                    ➕ Add card
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Board 2: In Progress -->
+          <div
+            draggable="true"
+            class="board"
+            id="card2
+          "
+            ondragover="allowDrop(event)"
+          >
+            <div class="board-head">
+              <h1>In Progress</h1>
+              <div class="zero">0</div>
+            </div>
+            <div
+              class="on-drop"
+              ondragover="allowDrop(event)"
+              ondrop="drop(event)"
+            ></div>
+            <div
+              ondragstart="drag(event)"
+              class="cards"
+              draggable="true"
+              id="board2"
+            >
+              <div class="circle">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div class="details">
+                <h4>Todo</h4>
+                <p>This is a todo card</p>
+                <div class="priority">High</div>
+              </div>
+              <div class="main-circle">
+                <div class="circle">
+                  <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="circle">
+                  <i class="fa-solid fa-pen"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="solid">
+                <div class="add-card">
+                  <p class="add-card" onclick="show()" id="add-todo-button">
+                    ➕ Add card
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Board 3: Stuck -->
+          <div
+            draggable="true"
+            class="board"
+            id="card3
+          "
+            ondragover="allowDrop(event)"
+          >
+            <div class="board-head">
+              <h1>Stuck</h1>
+              <div class="zero">0</div>
+            </div>
+            <div
+              class="on-drop"
+              ondragover="allowDrop(event)"
+              ondrop="drop(event)"
+            ></div>
+
+            <div class="card">
+              <div class="solid">
+                <div class="add-card">
+                  <p class="add-card" onclick="show()" id="add-todo-button">
+                    ➕ Add card
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Board 4: Done -->
+          <div
+            draggable="true"
+            class="board"
+            id="card4
+          "
+            ondragover="allowDrop(event)"
+          >
+            <div class="board-head">
+              <h1>Done</h1>
+              <div class="zero">0</div>
+            </div>
+            <div
+              class="on-drop"
+              ondragover="allowDrop(event)"
+              ondrop="drop(event)"
+            ></div>
+            <div class="card">
+              <div class="solid">
+                <div>
+                  <p class="add-card" onclick="show()" id="add-todo-button">
+                    ➕ Add card
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <script src="domko.js"></script>
+    <div class="modalContainer hide" id="modalContainer">
+      <div class="modal">
+        <div class="form">
+          <h1>Add Task</h1>
+          <p>Title</p>
+          <input class="input" id="title-input" type="text" />
+          <p>Description</p>
+          <input class="input" id="description-input" type="text" />
+          <p>Status</p>
+          <input class="input" id="status-input" type="text" />
+          <p>Priority</p>
+          <input class="input" id="priority-input" type="text" />
+          <button onclick="addTodo()">Submit</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="to-do.js"></script>
   </body>
 </html>
