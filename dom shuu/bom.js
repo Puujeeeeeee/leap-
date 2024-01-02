@@ -130,14 +130,67 @@
 // console.log(output);
 
 // 🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃 map🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃
-const input = [1, 2, 2, 3, 4, 4, 5];
+// const input = [1, 2, 2, 3, 4, 4, 5];
 
-const el = [];
-const output = input.filter((item) => {
-  if (!el.includes(item)) {
-    el.push(item);
-    return item;
+// const el = [];
+// const output = input.filter((item) => {
+//   if (!el.includes(item)) {
+//     el.push(item);
+//     return item;
+//   }
+// });
+
+// console.log(output);
+
+let students = [
+  {
+    name: "Сэд-Эрдэнэ",
+    age: 19,
+    gender: "male",
+  },
+  {
+    name: "Индра",
+    age: 19,
+    gender: "female",
+  },
+  {
+    name: "Хатнаа ",
+    age: 21,
+    gender: "male",
+  },
+  {
+    name: "Тэмүүлэн",
+    age: 24,
+    gender: "male",
+  },
+  {
+    name: "Намуун",
+    age: 23,
+    gender: "female",
+  },
+];
+function countGender(students) {
+  // Initialize counts
+  let maleCount = 0;
+  let femaleCount = 0;
+
+  // Loop through the students array
+  for (let i = 0; i < students.length; i++) {
+    // Check the gender and increment the corresponding count
+    if (students[i].gender === "male") {
+      maleCount++;
+    } else if (students[i].gender === "female") {
+      femaleCount++;
+    }
   }
-});
 
-console.log(output);
+  // Return an object with the counts
+  return {
+    male: maleCount,
+    female: femaleCount,
+  };
+}
+
+// Example usage
+const genderCounts = countGender(students);
+console.log(genderCounts);

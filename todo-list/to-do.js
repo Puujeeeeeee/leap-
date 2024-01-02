@@ -1,82 +1,318 @@
-function drag(event) {
-  event.dataTransfer.setData("text", event.target.id);
-}
+// function drag(event) {
+//   event.dataTransfer.setData("text", event.target.id);
+// }
 
-function allowDrop(event) {
+// function allowDrop(event) {
+//   event.preventDefault();
+// }
+
+// function drop(event) {
+//   event.preventDefault();
+//   const boxId = event.dataTransfer.getData("text");
+//   event.target.appendChild(document.getElementById(boxId));
+// }
+
+// function show() {
+//   document.getElementsById("add-todo-button")[0].classList.add("show");
+// }
+
+// document.getElementsByClassName("modalContainer")[0];
+// window.onclick = function (event) {
+//   if (event.target == modalContainer) {
+//     modalContainer.classList.remove("show");
+//   }
+//   const show = () => {
+//     document.getElementsByClassName("modalContainer")[0].classList.add("show");
+//   };
+// };
+
+// const render = () => {
+//   let boxString = "";
+//   boxArray.forEach((el, i) => {
+//     boxString += `<div ondragstart="drag(event)" class="box" draggable="true" id="box-${
+//       el.title + i
+//     }">
+//     <ul>
+//       <li>${el.title}</li>
+//       <li>${el.Description}</li>
+//       <li>${el.Status}</li>
+//       <li>${el.Priority}</li>
+//     </ul>
+//   </div>
+//   `;
+//   });
+//   document.getElementById("card1").innerHTML = boxString;
+// };
+// render();
+
+// const addTodo = () => {
+//   const titleInputValue = document.getElementById("title-input").value;
+//   const descriptionInputValue =
+//     document.getElementById("description-input").value;
+//   const statusInputValue = document.getElementById("status-input").value;
+//   const priorityInputValue = document.getElementById("priority-input").value;
+//   const inputObj = {
+//     title: titleInputValue,
+//     Description: descriptionInputValue,
+//     Status: statusInputValue,
+//     Priority: priorityInputValue,
+//   };
+//   boxArray.push(inputObj);
+//   render();
+// };
+// Select elements
+
+const boards = document.querySelectorAll(".board");
+
+const todoElement = document.querySelector("#todo");
+const inProgressElement = document.querySelector("#inprogress");
+const stuckElement = document.querySelector("#stuck");
+const doneElement = document.querySelector("#done");
+
+// Unique ID generator
+
+const uid = () => {
+  return Date.now().toString(36) + Math.random().toString(36);
+};
+
+// Card element
+
+const CardElement = (props) => {
+  const { id, title, description, priority, status } = props;
+
+  return `
+    <div class="card" draggable="true" data-id=${id}>
+      ${
+        status === "done"
+          ? `<div class="checked"><i class="fas fa-check"></i></div>`
+          : `<div class="done" onclick="makeDone('${id}')"><i class="fas fa-check"></i></div>`
+      }
+      <div class="details">
+        <h4>${title}</h4>
+        <p>${description}</p>
+        <div class="priority">
+          ${priority}
+        </div>
+      </div>
+      <div class="actions">
+        <div class="done" onclick="remove('${id}')">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="done" onclick="">
+          <i class="fa-solid fa-pen-to-square"></i>
+        </div>
+      </div>
+    </div>
+  `;
+};
+
+// Data (React state)
+
+let data = [
+  {
+    id: uid(),
+    status: "todo",
+    title: "Todo",
+    priority: "High",
+    description: "This is a todo card",
+  },
+  {
+    id: uid(),
+    status: "inprogress",
+    title: "Todo",
+    priority: "High",
+    description: "This is a todo card",
+  },
+];
+
+// Render function
+
+const render = () => {
+  todoElement.innerHTML = "";
+  inProgressElement.innerHTML = "";
+  stuckElement.innerHTML = "";
+  doneElement.innerHTML = "";
+
+  let todo = [];
+  let inProgress = [];
+  let stuck = [];
+  let done = [];
+
+  data.forEach((item) => {
+    if (item.status === "todo") {
+      todo.push(CardElement({ ...item }));
+    } else if (item.status === "inprogress") {
+      inProgress.push(CardElement({ ...item }));
+    } else if (item.status === "stuck") {
+      stuck.push(CardElement({ ...item }));
+    } else if (item.status === "done") {
+      done.push(CardElement({ ...item }));
+    }
+
+    document.querySelector("#todo-count").innerHTML = todo.length;
+    document.querySelector("#inprogress-count").innerHTML = inProgress.length;
+    document.querySelector("#stuck-count").innerHTML = stuck.length;
+    document.querySelector("#done-count").innerHTML = done.length;
+  });
+
+  todo.sort((a, b) => {
+    const aP = a.priority === "High" ? 3 : a.priority === "Medium" ? 2 : 1;
+    const bP = b.priority === "High" ? 3 : b.priority === "Medium" ? 2 : 1;
+
+    return aP - bP;
+  });
+
+  inProgress.sort((a, b) => {
+    const aP = a.priority === "High" ? 3 : a.priority === "Medium" ? 2 : 1;
+    const bP = b.priority === "High" ? 3 : b.priority === "Medium" ? 2 : 1;
+
+    return aP - bP;
+  });
+
+  stuck.sort((a, b) => {
+    const aP = a.priority === "High" ? 3 : a.priority === "Medium" ? 2 : 1;
+    const bP = b.priority === "High" ? 3 : b.priority === "Medium" ? 2 : 1;
+
+    return aP - bP;
+  });
+
+  done.sort((a, b) => {
+    const aP = a.priority === "High" ? 3 : a.priority === "Medium" ? 2 : 1;
+    const bP = b.priority === "High" ? 3 : b.priority === "Medium" ? 2 : 1;
+
+    return aP - bP;
+  });
+
+  todo.forEach((item) => {
+    todoElement.innerHTML += item;
+  });
+
+  inProgress.forEach((item) => {
+    inProgressElement.innerHTML += item;
+  });
+
+  stuck.forEach((item) => {
+    stuckElement.innerHTML += item;
+  });
+
+  done.forEach((item) => {
+    doneElement.innerHTML += item;
+  });
+
+  // add Drag and Drop functionality to cards
+
+  const cards = document.querySelectorAll(".card");
+
+  cards.forEach((card) => {
+    card.addEventListener("dragstart", (event) => {
+      event.dataTransfer.setData("text", event.target.getAttribute("data-id"));
+    });
+  });
+};
+
+// Data manipulation functions (Set state)
+
+const setData = (arr) => {
+  data = arr;
+  render();
+};
+
+// Functions
+
+const remove = (id) => {
+  setData(data.filter((item) => item.id !== id));
+};
+
+const makeDone = (id) => {
+  setData(
+    data.map((item) => {
+      if (item.id === id) {
+        item.status = "done";
+      }
+      return item;
+    })
+  );
+};
+
+const onSubmit = (event) => {
   event.preventDefault();
-}
 
-function drop(event) {
-  event.preventDefault();
-  const boxId = event.dataTransfer.getData("text");
-  event.target.appendChild(document.getElementById(boxId));
-}
+  const title = document.querySelector("#title").value;
+  const description = document.querySelector("#description").value;
+  const status = document.querySelector("#status").value;
+  const priority = document.querySelector("#priority").value;
 
-function show() {
-  document.getElementsByClassName("modalContainer")[0].classList.add("show");
-}
+  if (title && description) {
+    setData([
+      ...data,
+      {
+        id: uid(),
+        status,
+        title,
+        priority,
+        description,
+      },
+    ]);
 
-document.getElementsByClassName("modalContainer")[0];
-window.onclick = function (event) {
-  if (event.target == modalContainer) {
-    modalContainer.classList.remove("show");
+    document.querySelector("#title").value = "";
+    document.querySelector("#description").value = "";
+    document.querySelector("#status").value = "";
+    document.querySelector("#priority").value = "";
+
+    document.querySelector(".backdrop").classList.remove("active");
+  }
+
+  if (!title) {
+    document.querySelector("#title").classList.add("error");
+  }
+
+  if (!description) {
+    document.querySelector("#description").classList.add("error");
   }
 };
-// Your existing JavaScript code
-// Add drag-and-drop related functions
 
-let dragged;
+render();
 
-function allowDrop(event) {
-  event.preventDefault();
-}
+boards.forEach((board) => {
+  board.addEventListener("dragover", (event) => {
+    event.preventDefault();
+  });
 
-function drag(event) {
-  dragged = event.target;
-  event.dataTransfer.setData("text/plain", null);
-}
+  board.addEventListener("drop", (event) => {
+    const status = board.querySelector(".cards").id;
+    const id = event.dataTransfer.getData("text");
 
-function drop(event) {
-  event.preventDefault();
-  const target = event.target;
+    setData(
+      data.map((item) => {
+        if (item.id === id) {
+          item.status = status;
+        }
+        return item;
+      })
+    );
+  });
+});
 
-  // Check if the drop target is a valid card container
-  if (target.classList.contains("cards")) {
-    target.appendChild(dragged);
-  }
+document.querySelector(".away").addEventListener("click", () => {
+  document.querySelector(".backdrop").classList.remove("active");
+});
 
-  // Remove the 'drag-active' class from all elements
-  document
-    .querySelectorAll(".board, .cards")
-    .forEach((el) => el.classList.remove("drag-active"));
-}
+document.querySelectorAll(".add-btn").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    document.querySelector(".backdrop").classList.add("active");
+  });
+});
 
-function showModal(boardId) {
-  // Show modal and set appropriate data
-  const modal = document.getElementById("modalContainer");
-  const backdrop = document.getElementById("backdrop");
-  modal.style.display = "flex";
-  backdrop.style.display = "block";
+document.querySelector("form").addEventListener("submit", onSubmit);
 
-  // Set additional data for the task form
-  const form = document.getElementById("taskForm");
-  form.reset(); // Reset the form
-  form.dataset.boardId = boardId;
-}
+document.querySelectorAll("input").forEach((input) => {
+  input.addEventListener("input", () => {
+    input.classList.remove("error");
+  });
+});
 
-function hideModal() {
-  // Hide modal and backdrop
-  const modal = document.getElementById("modalContainer");
-  const backdrop = document.getElementById("backdrop");
-  modal.style.display = "none";
-  backdrop.style.display = "none";
-}
-
-function addTodo() {
-  // Your existing code to add a task
-  // ...
-  // After adding the task, hide the modal
-  hideModal();
-}
-
-// Add any additional JavaScript functions or improvements as needed
+document.querySelectorAll("textarea ").forEach((input) => {
+  input.addEventListener("input", () => {
+    input.classList.remove("error");
+  });
+});
