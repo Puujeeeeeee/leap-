@@ -22,3 +22,21 @@ window.onclick = function (event) {
     modalContainer.classList.remove("show");
   }
 };
+const addTodo = () => {
+  const titleInputValue = document.getElementById("title-input").value;
+  const descriptionInputValue =
+    document.getElementById("description-input").value;
+  const statusInputValue = document.getElementById("status-input").value;
+  const priorityInputValue = document.getElementById("priority-input").value;
+  console.log(Math.random());
+  const inputObj = {
+    id: Math.random().toString(),
+    title: titleInputValue,
+    Description: descriptionInputValue,
+    Status: statusInputValue,
+    Priority: priorityInputValue,
+  };
+  boxArray.push(inputObj);
+  addTodo();
+  document.getElementById;
+};
